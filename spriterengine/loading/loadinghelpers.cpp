@@ -154,10 +154,10 @@ namespace SpriterEngine
 
 	int FileFlattener::getFlattenedIndex(int folderIndex, int fileIndex)
 	{
-		if (folderIndex >= 0 && folderIndex < folders.size())
+		if (folderIndex >= 0 && folderIndex < static_cast<int>(folders.size()))
 		{
 			IntVector *files = &folders.at(folderIndex);
-			if (fileIndex >= 0 && fileIndex < files->size())
+			if (fileIndex >= 0 && fileIndex < static_cast<int>(files->size()))
 			{
 				return files->at(fileIndex);
 			}

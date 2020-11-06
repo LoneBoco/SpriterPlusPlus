@@ -29,7 +29,7 @@ namespace SpriterEngine
 
 		aObject->setObjectToLinear(bObject, t, this);
 
-		setIntValue(linear(tempValue, value, blendRatio));
+		setIntValue(static_cast<int>(linear(tempValue, value, blendRatio)));
 	}
 
 }

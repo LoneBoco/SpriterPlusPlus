@@ -18,12 +18,12 @@ namespace SpriterEngine
 
 	void SfmlSoundObjectInfoReference::setPlaybackVolume()
 	{
-		sound.setVolume(100 * getVolume());
+		sound.setVolume(static_cast<float>(100 * getVolume()));
 	}
 
 	void SfmlSoundObjectInfoReference::setPlaybackPanning()
 	{
-		sound.setPosition(100 * getPanning(), 0, 0);
+		sound.setPosition(static_cast<float>(100 * getPanning()), 0, 0);
 	}
 
 }

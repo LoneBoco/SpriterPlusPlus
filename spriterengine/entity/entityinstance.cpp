@@ -189,7 +189,7 @@ namespace SpriterEngine
 
 	FileReference *EntityInstance::getFile(int fileId)
 	{
-		if (fileId < files.size())
+		if (fileId < static_cast<int>(files.size()))
 		{
 			return files.at(fileId);
 		}
@@ -334,7 +334,7 @@ namespace SpriterEngine
 		else
 		{
 			Settings::error("EntityInstance::getStringValue - variable instance with name " + variableName + " not found");
-			return 0;
+			return {};
 		}
 	}
 
@@ -348,7 +348,7 @@ namespace SpriterEngine
 		else
 		{
 			Settings::error("EntityInstance::getRealValue - object instance with name " + objectName + " or variable instance with name " + variableName + " not found");
-			return 0;
+			return {};
 		}
 	}
 

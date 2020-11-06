@@ -147,7 +147,7 @@ namespace SpriterEngine
 
 	int Animation::getObjectIdFromTimelineIndex(int timelineIndex)
 	{
-		if (timelineIndex < objectTimelines.size())
+		if (timelineIndex < static_cast<int>(objectTimelines.size()))
 		{
 			return objectTimelines.at(timelineIndex)->getObjectId();
 		}
@@ -160,7 +160,7 @@ namespace SpriterEngine
 
 	TimelineKey *Animation::getObjectTimelineKey(int timelineIndex, int keyIndex)
 	{
-		if (timelineIndex < objectTimelines.size())
+		if (timelineIndex < static_cast<int>(objectTimelines.size()))
 		{
 			return objectTimelines.at(timelineIndex)->getKey(keyIndex);
 		}

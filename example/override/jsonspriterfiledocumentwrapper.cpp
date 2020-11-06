@@ -21,7 +21,7 @@ namespace SpriterEngine
 
 		// reserve space is faster with big files
 		t.seekg(0, std::ios::end);
-		json_str.reserve(t.tellg());
+		json_str.reserve(static_cast<size_t>(t.tellg()));
 		t.seekg(0, std::ios::beg);
 
 		json_str.assign((std::istreambuf_iterator<char>(t)),

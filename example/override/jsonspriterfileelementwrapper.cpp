@@ -18,7 +18,7 @@ namespace SpriterEngine
 	bool JSONSpriterFileElementWrapper::isValid()
 	{
 		// Check if the index is valid
-		if(m_index >= m_array.size())
+		if(m_index >= static_cast<int>(m_array.size()))
 			return false;
 		// Is the current object in the array an object?
 		json object_value = m_array.at(m_index);

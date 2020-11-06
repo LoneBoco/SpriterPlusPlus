@@ -23,7 +23,7 @@ namespace SpriterEngine
 
 	UniversalObjectInterface *VariableInstanceNameAndIdMap::getVariable(int variableIndex)
 	{
-		if(variableIndex < variables.size())
+		if (variableIndex < static_cast<int>(variables.size()))
 		{
 			return variables.at(variableIndex);
 		}

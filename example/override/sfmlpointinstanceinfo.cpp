@@ -17,8 +17,8 @@ namespace SpriterEngine
 	{
 		if (Settings::renderDebugPoints)
 		{
-			circle.setPosition(getPosition().x, getPosition().y);
-			circle.setRotation(toDegrees(getAngle()));
+			circle.setPosition(static_cast<float>(getPosition().x), static_cast<float>(getPosition().y));
+			circle.setRotation(static_cast<float>(toDegrees(getAngle())));
 			renderWindow->draw(circle);
 		}
 	}

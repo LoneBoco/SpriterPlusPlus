@@ -54,7 +54,7 @@ namespace SpriterEngine
 
 	TimelineKey *Timeline::getKey(int keyIndex)
 	{
-		if (keyIndex < keys.size())
+		if (keyIndex < static_cast<int>(keys.size()))
 		{
 			return keys.at(keyIndex);
 		}

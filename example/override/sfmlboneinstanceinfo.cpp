@@ -11,12 +11,12 @@ namespace SpriterEngine
 	{
 		boneShape.setPointCount(4);
 
-		boneShape.setPoint(0, sf::Vector2f(0, initialSize.y/2.0));
+		boneShape.setPoint(0, sf::Vector2f(0, static_cast<float>(initialSize.y/2.0)));
 		boneShape.setPoint(1, sf::Vector2f(4, 0));
-		boneShape.setPoint(2, sf::Vector2f(initialSize.x, initialSize.y/2.0));
-		boneShape.setPoint(3, sf::Vector2f(4, initialSize.y));
+		boneShape.setPoint(2, sf::Vector2f(static_cast<float>(initialSize.x), static_cast<float>(initialSize.y/2.0)));
+		boneShape.setPoint(3, sf::Vector2f(4, static_cast<float>(initialSize.y)));
 
-		boneShape.setOrigin(0, initialSize.y/2.0);
+		boneShape.setOrigin(0, static_cast<float>(initialSize.y/2.0));
 
 		boneShape.setFillColor(sf::Color(0, 0, 255, 50));
 
@@ -28,9 +28,9 @@ namespace SpriterEngine
 	{
 		if (Settings::renderDebugBones)
 		{
-			boneShape.setPosition(getPosition().x, getPosition().y);
-			boneShape.setRotation(toDegrees(getAngle()));
-			boneShape.setScale(getScale().x, getScale().y);
+			boneShape.setPosition(static_cast<float>(getPosition().x), static_cast<float>(getPosition().y));
+			boneShape.setRotation(static_cast<float>(toDegrees(getAngle())));
+			boneShape.setScale(static_cast<float>(getScale().x), static_cast<float>(getScale().y));
 			renderWindow->draw(boneShape);
 		}
 	}
