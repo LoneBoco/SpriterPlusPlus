@@ -2,6 +2,8 @@
 #define ANIMATION_H
 
 #include <vector>
+#include <map>
+#include <string>
 
 #include "../timeline/timeline.h"
 

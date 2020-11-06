@@ -2,6 +2,7 @@
 #define SPRITERMODEL_H
 
 #include <vector>
+#include <string>
 
 #include "../file/file.h"
 #include "../entity/entity.h"

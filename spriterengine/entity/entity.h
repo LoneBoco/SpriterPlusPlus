@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <map>
+#include <string>
 
 #include "../animation/animation.h"
 #include "../variable/variablecontainer.h"

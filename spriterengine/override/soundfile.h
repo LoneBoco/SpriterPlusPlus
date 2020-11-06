@@ -1,6 +1,8 @@
 #ifndef SOUNDFILE_H
 #define SOUNDFILE_H
 
+#include <string>
+
 #include "../file/file.h"
 
 namespace SpriterEngine

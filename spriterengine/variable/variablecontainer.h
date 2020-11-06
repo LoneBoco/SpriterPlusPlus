@@ -2,6 +2,7 @@
 #define VARIABLECONTAINER_H
 
 #include <vector>
+#include <string>
 
 #include "../global/global.h"
 

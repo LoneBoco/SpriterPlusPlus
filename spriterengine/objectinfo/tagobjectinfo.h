@@ -1,6 +1,8 @@
 #ifndef TAGOBJECTINFO_H
 #define TAGOBJECTINFO_H
 
+#include <string>
+
 #include "universalobjectinterface.h"
 
 #include "taglist.h"

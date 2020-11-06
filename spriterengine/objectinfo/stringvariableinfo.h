@@ -1,6 +1,8 @@
 #ifndef STRINGVARIABLEINFO_H
 #define STRINGVARIABLEINFO_H
 
+#include <string>
+
 #include "universalobjectinterface.h"
 
 namespace SpriterEngine

@@ -2,6 +2,7 @@
 #define OBJECT_H
 
 #include <vector>
+#include <string>
 
 #include "../variable/variablecontainer.h"
 

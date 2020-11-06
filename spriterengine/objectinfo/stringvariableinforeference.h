@@ -1,6 +1,8 @@
 #ifndef STRINGVARIABLEINFOREFERENCE_H
 #define STRINGVARIABLEINFOREFERENCE_H
 
+#include <string>
+
 #include "universalobjectinterface.h"
 
 namespace SpriterEngine

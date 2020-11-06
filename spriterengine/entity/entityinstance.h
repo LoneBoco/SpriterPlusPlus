@@ -4,6 +4,7 @@
 #include <map>
 #include <vector>
 #include <list>
+#include <string>
 
 #include "../animation/animationinstance.h"
 #include "../objectref/transformprocessor.h"

@@ -1,6 +1,7 @@
 #ifndef LOADINGHELPERS_H
 #define LOADINGHELPERS_H
 
+#include <vector>
 #include <string>
 #include <map>
 
